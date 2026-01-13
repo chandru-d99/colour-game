@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>THE COLOUR MAKEING</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ENTRY PAGE -->
+<div id="entry" class="fade-in">
+  <h1>🎨 THE COLOUR MAKEING</h1>
+  <button onclick="startGame()">START GAME</button>
+</div>
+
+<!-- GAME PAGE -->
+<div id="game" class="hidden">
+
+  <div class="top-bar">
+    <span>Level <b id="level">1</b></span>
+    <span>🪙 <b id="coins">0</b></span>
+  </div>
+
+  <div class="game-area">
+
+    <!-- LEFT: REFERENCE -->
+    <div class="board">
+      <h3>Reference</h3>
+    </div>
+
+    <!-- RIGHT: PLAYER -->
+    <div class="board">
+      <h3>Your Drawing</h3>
+    </div>
+
+  </div>
+
+  <div class="palette">
+    <span>Select Color:</span>
+    <button class="c red" onclick="pick('red')"></button>
+    <button class="c blue" onclick="pick('blue')"></button>
+    <button class="c green" onclick="pick('green')"></button>
+    <button class="c yellow" onclick="pick('yellow')"></button>
+    <button class="c orange" onclick="pick('orange')"></button>
+    <button class="c purple" onclick="pick('purple')"></button>
+    <button class="c pink" onclick="pick('pink')"></button>
+    <button class="c brown" onclick="pick('brown')"></button>
+    <button class="c cyan" onclick="pick('cyan')"></button>
+    <button class="c lime" onclick="pick('lime')"></button>
+  </div>
+
+  <p>Accuracy: <b id="accuracy">0%</b></p>
+
+  <div class="actions">
+    <button onclick="skipLevel()">Skip (-500 🪙)</button>
+    <button onclick="nextLevel()">Next ➡</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
